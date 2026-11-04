@@ -20,6 +20,10 @@ function reset() {
     updateCounter();
 }
 
+document.getElementById('decrease-btn').addEventListener('click', decrement)
+document.getElementById('increase-btn').addEventListener('click', increment)
+document.getElementById('reset-btn').addEventListener('click', reset)
+
 document.getElementById('text-form').addEventListener('submit', function (ev) {
     ev.preventDefault();
     const input = document.getElementById('form-input')

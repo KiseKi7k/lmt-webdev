@@ -19,7 +19,7 @@
     font-size: 48px;
     font-weight: bold;
     margin: 32px;
-}
+}   
 
 #main-container {
     display: flex;
@@ -39,7 +39,7 @@
     box-shadow: 16px 16px 64px 1px rgb(113, 113, 113);
     text-align: center;
     border-style: solid;
-    border-color: rgb(185, 185, 185);
+    border-color: rgb(113, 113, 113);
 }
 
 #lmt-container {
