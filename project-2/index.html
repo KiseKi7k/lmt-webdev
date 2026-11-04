@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="counter-container">
+        <h1>Counter</h1>
+        <h1 id="counter-text">0</h1>
+        <div id="btn-container">
+            <button class="btn" id="decrease-btn" onclick="decrement()">-</button>
+            <button class="btn" id="reset-btn" onclick="reset()">Reset</button>
+            <button class="btn" id="increase-btn" onclick="increment()">+</button>
+        </div>
+    </div>
+
+    <div id="form-container">
+        <form id="text-form">
+            <input id="form-input" type="text"/>
+            <button class="btn">Submit</button>
+            <p id="form-text">Text</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
