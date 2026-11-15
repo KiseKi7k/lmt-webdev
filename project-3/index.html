@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <p id="header-text">Dashboard</p>
+    </div>
+
+    <div id="main-container">
+        <div id="ldr-dht-container">
+            <div id="ldr-container">
+                <h2 id="ldr-title">LDR</h2>
+                <p id="ldr-value">0</p>
+            </div>
+            <div id="dht-container">
+                <h2 id="dht-title">DHT</h2>
+                <p id="dht-value">0</p>
+            </div>
+        </div>
+
+        <div id="led-container">
+            <h2>LED Display</h2>
+            <form id="led-form">
+                <input id="form-input" type="text"/>
+                <button class="btn">Submit</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mqtt.js"></script>
+</body>
+</html>

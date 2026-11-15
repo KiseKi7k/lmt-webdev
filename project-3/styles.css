@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: rgb(110, 110, 251);
+    padding: 4px;
+}
+
+#header-text {
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    font-size: larger;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#ldr-dht-container {
+    display: flex;
+
+    padding: 24px;
+    gap: 16px;
+}
+
+#ldr-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    align-items: center;
+
+    border-color: rgb(110, 110, 251);
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 12px;
+
+    height: fit-content;
+    padding: 16px;
+}
+
+#ldr-title {
+    font-size: 48px;
+}
+
+#ldr-value {
+    font-size: 32px;
+}
+
+#dht-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    align-items: center;
+
+    border-color: rgb(110, 110, 251);
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 12px;
+
+    height: fit-content;
+    padding: 16px;
+}
+
+#dht-title {
+    font-size: 48px;
+}
+
+#dht-value {
+    font-size: 32px;
+}
+
+#led-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
