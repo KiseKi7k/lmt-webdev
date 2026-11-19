@@ -26,13 +26,14 @@
         <div id="led-container">
             <h2>LED Display</h2>
             <form id="led-form">
-                <input id="form-input" type="text"/>
-                <button class="btn">Submit</button>
+                <input id="led-input" type="text"/>
+                <button type="submit" class="btn">Submit</button>
         </form>
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="mqtt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/5.16.1/mqtt.js"></script>
+    <script type="module" src="client.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

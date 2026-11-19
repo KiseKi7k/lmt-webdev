@@ -24,8 +24,8 @@ document.getElementById('decrease-btn').addEventListener('click', decrement)
 document.getElementById('increase-btn').addEventListener('click', increment)
 document.getElementById('reset-btn').addEventListener('click', reset)
 
-document.getElementById('text-form').addEventListener('submit', function (ev) {
-    ev.preventDefault();
+document.getElementById('text-form').addEventListener('submit', function (e) {
+    e.preventDefault();
     const input = document.getElementById('form-input')
     const text = input.value;
 
