@@ -14,7 +14,7 @@ function handleDHT(value) {
     subscribe(TOPIC) */ 
 
 client.on('connect', function () {
-    // ชื่อ Topic
+    // ใส่ชื่อ Topic
     subscribe([
         'ldr',
         'dht'

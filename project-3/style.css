@@ -84,4 +84,33 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+#led-title {
+    font-size: 36px;
+}
+
+#led-input {
+    font-size: large;
+}
+
+.btn {
+    background-color: rgb(60, 98, 248);
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    
+    text-align: center;
+    font-weight: bold;
+
+    border-radius: 8px;
+    border: none;
+
+    transition: background-color 200ms ease-out;
+}
+
+.btn:hover {
+    background-color: rgb(89, 120, 244);
 }

@@ -1,6 +1,7 @@
 // เปลี่ยนเป็น URL ของเราเอง
-const MQTT_URL = "wss://api.sondahub.com/mqtt"
+const MQTT_URL = ""
 
+// ตรงนี้ไม่ต้องเปลี่ยน
 export const client = mqtt.connect(MQTT_URL, { protocolVersion: 5 })
 
 /**
