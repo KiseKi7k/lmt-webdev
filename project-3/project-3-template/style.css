@@ -27,6 +27,7 @@ body {
 
 #ldr-dht-container {
     display: flex;
+    justify-content: center;
 
     padding: 24px;
     gap: 16px;
@@ -35,7 +36,7 @@ body {
 #ldr-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    width: 50%;
 
     align-items: center;
 
@@ -53,30 +54,6 @@ body {
 }
 
 #ldr-value {
-    font-size: 32px;
-}
-
-#dht-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-
-    align-items: center;
-
-    border-color: rgb(110, 110, 251);
-    border-width: 8px;
-    border-style: solid;
-    border-radius: 12px;
-
-    height: fit-content;
-    padding: 16px;
-}
-
-#dht-title {
-    font-size: 48px;
-}
-
-#dht-value {
     font-size: 32px;
 }
 
