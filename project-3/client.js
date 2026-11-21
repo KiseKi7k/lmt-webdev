@@ -1,5 +1,5 @@
 // เปลี่ยนเป็น URL ของเราเอง
-const MQTT_URL = ""
+const MQTT_URL = "wss://iot.cpe.ku.ac.th"
 
 // ตรงนี้ไม่ต้องเปลี่ยน
 export const client = mqtt.connect(MQTT_URL, { protocolVersion: 5 })
