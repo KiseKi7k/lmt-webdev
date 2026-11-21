@@ -1,37 +1,29 @@
 var count = 0;
 
 function updateCounter() {
-    const counterText = document.getElementById("counter-text");
+    const counterText = document.getElementById("elementId"); // เเก้ไข
     counterText.textContent = count;
 }
 
+function reset() {
+    //
+}
+
 function increment() {
-    count++;
-    updateCounter();
+    //
 }
 
 function decrement() {
-    count--;
-    updateCounter();
+    //
 }
 
-function reset() {
-    count = 0;
-    updateCounter();
-}
-
-document.getElementById('decrease-btn').addEventListener('click', decrement)
-document.getElementById('increase-btn').addEventListener('click', increment)
-document.getElementById('reset-btn').addEventListener('click', reset)
-
-document.getElementById('text-form').addEventListener('submit', function (e) {
+document.getElementById('id?')
+    .addEventListener('submit', function (e) {
     e.preventDefault();
     const input = document.getElementById('form-input')
     const text = input.value;
 
-    if (!text) return;
-
-    const formText = document.getElementById('form-text');
+    const formText = document.getElementById('id?'); // เเก้ไข
     formText.textContent = text;
 
     input.value = "";

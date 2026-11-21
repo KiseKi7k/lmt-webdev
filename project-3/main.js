@@ -1,6 +1,11 @@
 import { client, publish, subscribe } from "./client.js"
-const me = "w01";
-const board = "b01";
+const me = "w"; // เเก้เป็นเลขูคู่่ตัวเอง ex. w01
+const board = "b"; // เเก้เป็นเลขูคู่่ตัวเอง ex. b01
+
+function updateLDR(value) {
+    const ldrText = document.getElementById('id?'); // เเก้ไข
+    ldrText.textContent = value; 
+}
 
 /* -- Subscribe --
     subscribe(TOPIC) */ 
@@ -16,13 +21,22 @@ client.on('connect', function () {
 
 
 client.on('message', function (topic, payload) { 
+    // Code here
+    const parts = topic.split("/");
+    const text = payload.toString();
+
+    if (parts == "light") {
+        updateLDR(text);
+    }
+
     console.log(topic, payload.toString())
 })
 
 /* -- Publish --
     publish(TOPIC, payload) */
 
-document.getElementById('led-form').addEventListener('submit', function (e) {
+document.getElementById('id?') // เเก้ไข
+    .addEventListener('submit', function (e) {
     e.preventDefault();
     const input = document.getElementById('led-input');
     const text = input.value;
