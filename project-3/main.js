@@ -1,4 +1,6 @@
 import { client, publish, subscribe } from "./client.js"
+const me = "w01";
+const board = "b01";
 
 /* -- Subscribe --
     subscribe(TOPIC) */ 
@@ -6,7 +8,7 @@ import { client, publish, subscribe } from "./client.js"
 client.on('connect', function () {
     // ใส่ชื่อ Topic
     subscribe([
-        ''
+        `public/lmt6/board/${board}/light`
     ])
 
     console.log("Connected");
@@ -27,7 +29,7 @@ document.getElementById('led-form').addEventListener('submit', function (e) {
 
     if (!text) return;
 
-    publish('public', text);
+    publish(`public/lmt6/board/${board}/text/${me}`, text);
 
     input.value = "";
 })
